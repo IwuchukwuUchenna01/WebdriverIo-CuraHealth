@@ -11,12 +11,14 @@
   "author": "Uchenna",
   "license": "ISC",
   "dependencies": {
+    "allure-commandline": "^2.27.0",
     "chai": "^5.0.3",
     "mocha": "^10.2.0",
     "selenium-standalone": "^9.3.2",
     "webdriverio": "^8.29.1"
   },
   "devDependencies": {
+    "@wdio/allure-reporter": "^8.29.3",
     "@wdio/cli": "^8.29.1",
     "@wdio/local-runner": "^8.29.2",
     "@wdio/mocha-framework": "^8.29.1",
