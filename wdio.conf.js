@@ -53,7 +53,12 @@ exports.config = {
     //
     capabilities: [{
         // capabilities for local browser web tests
-        browserName: 'chrome' // or "firefox", "microsoftedge", "safari"
+        maxInstances: 5,
+        browserName: 'chrome',
+        acceptInsecureCerts: true,
+        'goog:chromeOptions': { 
+            args: ["--headless", "user-agent=...","--disable-gpu","--window-size=1440,735"]
+       }
     }],
 
     //
